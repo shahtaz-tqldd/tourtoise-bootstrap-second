@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Place Name</title>
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Menubar -->
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container my-2">
+                <a class="navbar-brand" href="/index.html">
+                    <img class="logo-size" src="images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 fs-5">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="/tourplace.html">Tour Place</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/blogpage.html">Tour Blogs</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="/story.html">Story</a>
+                        </li>
+
+                    </ul>
+                    <div class="g-5">
+                        <button class="btn btn-outline-success color-theme mx-3">Sign In</button>
+                        <button class="btn btn-success bg-theme">Sign Up</button>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Top Banner -->
+        <section class="top-gap-lg">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-5 col-md-8 col-12">
+                        <h1 class="fw-bold color-theme font-s">Sajek Valley</h1>
+                        <p class="fs-4 mt-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-geo-alt-fill color-indigo" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>
+                            <span class="color-indigo">Bandarban, Rangamati</span>
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <p class="me-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-fill text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg>
+                                <span class="text-dark">Winter</span>
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bookmark-plus-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z" />
+                                </svg>
+                                Hill Treck | Trecking
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7 col-12 col-md-10 mx-auto">
+
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/sajek/sajek-1.jpg" class="d-block w-100 img-block rounded-3"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sajek/sajek-3.jpg" class="d-block w-100 img-block rounded-3"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sajek/sajek-5.jpg" class="d-block w-100 img-block rounded-3"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <section class="y-gap-md">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12">
+
+                    <!-- How to go from Dhaka -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme bn-font">ঢাকা থেকে যেভাবে যেতে হবে</h2>
+                        <p class="bn-font font-sm mt-3">সাজেক যেতে হলে প্রথমেই ঢাকা থেকে খাগড়াছড়ি গিয়ে পৌছাতে হবে। ঢাকা
+                            থেকে খাগড়াছড়ি পর্যন্ত সরাসরি যাবার জন্য বেশ কয়েকটা বাস আছে। এই বাসগুলো ঢাকার ফকিরাপুল,
+                            সায়েদাবাদ, শ্যামলী, গাবতলি, কলাবাগানসহ সহ বেশ কয়েকটা বাস স্টপ থেকে ছেড়ে যায়। বাসের ভাড়া নন
+                            এসি ৭৫০-৮৫০ টাকা। এসি বাস কেবল একটাই আছে, রাত ১১.১৫ তে কলাবাগান থেকে ছাড়ে। প্রতি টিকেট মূল্য
+                            ১৬০০ টাকা।
+                            <br>
+                            <br>
+
+                            খাগড়াছড়ি পৌঁছে ওখানে বাসস্টান্ডের পাশেই চাঁদের গাড়ি পাওয়া যাবে। চাঁদের গাড়িগুলো অনেকটা জিপ
+                            টাইপের গাড়ি, পাহাড়ি রাস্তা ধরে ওঠার জন্য বিশেষ এই গাড়িগুলো সাজেক পর্যন্ত যায়। চাঁদের গাড়ি
+                            প্রতি ভাড়া নিতে হয়, জনপ্রতি ভাড়ার সিস্টেম এখানে নেই। প্রতি গাড়িতে সর্বোচ্চ ১২-১৪ জন বসতে
+                            পারে। সে হিসেবে বেশি জনের একটা টিম গেলে খরচ কম পড়ে নতুবা ছোট টিম হলে ওখানে গিয়ে কোন একটা
+                            টিমের সঙ্গে সাজেক পর্যন্ত গাড়ি শেয়ার করে যাওয়া যেতে পারে। গাড়ি শেয়ারিং নিজেরা কথা বলে ঠিক
+                            করে নিতে হয়। গাড়ি প্রতি ভাড়া বিভিন্ন সময় ওখানের সিন্ডিকেট ঠিক করে দেয়। আনুমানিক ৫ থেকে ৭
+                            হাজার আপডাউন ভাড়া পড়ে। অর্থাৎ কোন চাঁদের গাড়ি ঠিক করলে সে গাড়িতেই যাওয়া এবং ফেরত আসা।
+                            খাগড়াছড়ি থেকে সাজেক পর্যন্ত প্রায় তিন থেকে সাড়ে তিন ঘন্টার পাহাড়ি পথ ধরে জার্নি।
+                        </p>
+                    </div>
+
+                    <!-- Where to stay -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme bn-font">কোথায় গিয়ে থাকবো?</h2>
+                        <p class="bn-font font-sm mt-3">সাজেকে থাকার দুটো জায়গা আছে।<br>
+                            <b>প্রথম জায়গা:</b> চাঁদের গাড়ি যেখানে নামিয়ে দেবে, সেখানেই আশেপাশে বেশ কতগুলো হোটেল, কটেজ
+                            এবং রিসোর্ট আছে। ট্যুর সিজনে গিয়েই হোটেল, রিসোর্ট বা কটেজ পাওয়া যায় না। এক্ষেত্রে আগে থেকেই
+                            হোটেল, রিসোর্ট বা কটেজ প্রিবুক করে যেতে হয়। আর অন্য সময়ে গিয়েই যেকোনো জায়গা পছন্দ করে চেক ইন
+                            করা যায়। অন সিজন, অফ সিজনের উপর নির্ভর করে হোটেল, কটেজ বা রিসোর্টের ভাড়া কম বেশি হয়।
+                            <br>
+                            <br>
+                            <b>দ্বিতীয় জায়গা:</b> কংলাক পাহাড় সাজেকের অন্যতম একটি ট্যুরস্পট। এ পাহাড়ে বসে সাজেকের সবচেয়ে
+                            সুন্দর সূর্যাস্ত দেখা যায়। কংলাক পাহাড়ের পাশেই স্থানীয়দের গেস্ট হাউজ আছে। পাহাড়ি কায়দায়
+                            বানানো এই গেস্ট হাউজগুলোতে হোটেল বা রিসোর্টের মত অত্যাধুনিক সেবা পাওয়া যায় না কিন্তু পাহাড়
+                            ঘেঁসে ওদের মত করে থাকার সুযোগ পাওয়া যায়। পার নাইট হিসেবে এখানে গেস্ট হাঊজ ভাড়া নেওয়ার সুযোগ
+                            রয়েছে। গেস্ট হাউজ এ উঠলে ওরাই দুপুর রাত বা সকালের খাবারের ব্যবস্থা করে দেয়। মেনু অবশ্য ওদের
+                            নিজস্বই কিন্তু বেস্ট মেনু সার্ভ করতে ওদের বিকল্প নেই।
+                        </p>
+                    </div>
+
+                    <!-- where to visit -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme mb-4 bn-font">যেসব জায়গা ঘুরে দেখার আছে</h2>
+                        <div class="d-flex tourspot-scroll pb-4">
+                            <!-- tourspot-1 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm">
+                                    <img src="images/sajek/konglak-pahar.jpg" class="card-img-top img-spot" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-text text-danger fw-bold bn-font">কংলাক পাহাড়</h3>
+                                        <!-- star icons -->
+                                        <div class="d-flex text-warning align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="text-dark ms-2">| 234 Review</span>
+                                        </div>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-success bg-theme border-0 mt-3"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            See Details
+                                        </button>
+
+                                        <!-- See details Modals -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title fw-bold color-red bn-font"
+                                                            id="exampleModalLabel">কংলাক পাহাড়</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="images/sajek/konglak-pahar.jpg"
+                                                            class="img-fluid img-story w-100" alt="">
+                                                        <div class="mt-5 bn-font font-sm">
+                                                            <p><strong>Distance From the place</strong><br><span
+                                                                    class="fs-5"> 2km</span> </p>
+                                                            <p><strong>Transportation</strong><br><span class="fs-5">
+                                                                    পায়ে হেটে</span> </p>
+                                                            <p><strong>Transport Fair</strong><br><span class="fs-5">
+                                                                    50-100 taka</span> </p>
+
+                                                            <p>
+                                                                <strong>Short Description</strong> <br>
+                                                                কংলাক পাহাড়ে মনোরম পরিবেশে সাজেকের পাহাড়গুলোর সবচেয়ে
+                                                                সুন্দর দৃশ্য দেখা যায়। সূর্যাস্ত দেখার সময়টুকুতে
+                                                                পর্যটকেরা সাধারণত বেশি ভিড় করে।
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tourspot-2 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm">
+                                    <img src="images/sajek/risang-waterfall.jpg" class="card-img-top img-spot"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-text text-danger fw-bold bn-font">রিসাং ঝর্না</h3>
+                                        <!-- star icons -->
+                                        <div class="d-flex text-warning align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="text-dark ms-2">| 234 Review</span>
+                                        </div>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-success bg-theme border-0 mt-3"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            See Details
+                                        </button>
+
+                                        <!-- See details Modals -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title fw-bold color-red bn-font"
+                                                            id="exampleModalLabel">রিসাং ঝর্না</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="images/sajek/risang-waterfall.jpg"
+                                                            class="img-fluid img-story w-100" alt="">
+                                                        <div class="mt-5 bn-font font-sm">
+                                                            <p><strong>Distance From the place</strong><br><span
+                                                                    class="fs-5"> 3-4 km</span> </p>
+                                                            <p><strong>Transportation</strong><br><span class="fs-5">
+                                                                    পায়ে হেটে ট্রেক করে যেতে হয়। কোনো ট্যুরগাইড নেওয়ার
+                                                                    দরকার পড়েনা।
+                                                                </span> </p>
+                                                            <p><strong>Transport Fair</strong><br><span class="fs-5">
+                                                                    Not Necessary</span> </p>
+
+                                                            <p>
+                                                                <strong>Short Description</strong> <br>
+                                                                রুইছং ঝর্না সাজেক থেকে একটু দূরে। পায়ে হেটে ট্রেক করে
+                                                                যেতে হয়। সাজেক থেকে খাড়া পাহাড় বেয়ে নামতে হয় বিধায় রুইছং
+                                                                ঝর্ণায় যাওয়ার পথ তুলনামূলক সোজা। কিন্তু ফিরবার পথে একটু
+                                                                কষ্ট। রুইছং ঝর্ণা মাঝারী আকারের, শীত বা গ্রীষ্মের
+                                                                সময়টুকুতে শুকিয়ে থাকলেও অন্যান্য সময়ে বেশ জল থাকে। তখন
+                                                                উপভোগের জন্য এই জায়গাটি পর্যটকদের জন্য খুবুই আকর্ষনীয়
+                                                                হয়ে পড়ে। তবে হ্যাঁ, রুইছং ঝর্ণায় যেতে হলে অবশ্যই পাহাড়
+                                                                চড়ার কষ্ট সামাল দিতে হবে।
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tourspot-3 -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm">
+                                    <img src="images/sajek/alutila-guha.jpg" class="card-img-top img-spot" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-text text-danger fw-bold bn-font">আলুটিলা গুহা</h3>
+                                        <!-- star icons -->
+                                        <div class="d-flex text-warning align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star mx-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                            </svg>
+                                            <span class="text-dark ms-2">| 234 Review</span>
+                                        </div>
+
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-success bg-theme border-0 mt-3"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                            See Details
+                                        </button>
+
+                                        <!-- See details Modals -->
+                                        <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title fw-bold color-red bn-font"
+                                                            id="exampleModalLabel">আলুটিলা গুহা</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="images/sajek/alutila-guha.jpg"
+                                                            class="img-fluid img-story w-100" alt="">
+                                                        <div class="mt-5 bn-font font-sm">
+                                                            <p><strong>Distance From the place</strong><br><span
+                                                                    class="fs-5"> সাজেক থেকে ফিরতি পথে</span> </p>
+                                                            <p><strong>Transportation</strong><br><span class="fs-5">
+                                                                    সিএনজি কিংবা চাঁদের গাড়ি
+                                                                </span> </p>
+                                                            <p><strong>Transport Fair</strong><br><span class="fs-5">
+                                                                    Not Necessary</span> </p>
+
+                                                            <p>
+                                                                <strong>Short Description</strong> <br>
+                                                                আলুটিলা গুহা পড়েছে খাগড়ছড়িতে। সাজেক থেকে ফিরতি পথে
+                                                                অধিকাংশ ট্যুরিস্টই আলুটিলা গুহা দেখে যায়। খাগড়াছড়ি শহর
+                                                                থেকে বেশ খানিকটা দূরে এই পর্যটন কেন্দ্র। আলুটিলা গুহার
+                                                                সঙ্গে খাগড়াছড়িতে আরও ৩-৪টি স্পট ঘুরিয়ে দেখার জন্য
+                                                                খাগড়াছড়ি শহর থেকে সিএনজি ভাড়া প্রায় ৮০০-১০০০ টাকা পড়তে
+                                                                পারে। নিজ দায়িত্বে দামাদামি, কতটুকু সময় ঘোরা হবে এবং
+                                                                কতগুলো স্পট ঘুরিয়ে দেখা যাবে সেগুলো ঠিক করে নিতে হয়।
+                                                                আলুটিলা গুহা যেখানে সেই ট্যুরিস্ট স্পট ঘিরে একটি পার্ক
+                                                                তৈরি করা। টিকেট কেটে ঢুকতে হয়। আলুটিলা খুবই ছোট একটি
+                                                                সুড়ঙ্গপথ। দশ মিনিটের মাঝে গুহার এক প্রান্ত দিয়ে ঢুকে
+                                                                অন্য প্রান্ত দিয়ে বের হওয়া যায়। গুহা পরিদর্শন কেমন হতে
+                                                                পারে তার খুবই সামান্য একটু স্বাদ পেতে আলুটিলা গুহা দেখতে
+                                                                যাওয়া যেতে পারে। সবমিলিয়ে এই জায়গাটি পরিদর্শনে এক থেকে
+                                                                দুঘণ্টা সময় লাগবে।
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- What to Eat? -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme mb-4 bn-font">কী কী খাবার অবশ্যই খেয়ে দেখতে হবে</h2>
+                        <div class="d-flex tourspot-scroll pb-4">
+                            <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/sajek/bamboo-chicken.jpg" class="card-img-top img-food" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-text color-theme fw-bold bn-font">ব্যাম্বু চিকেন (বাশ মুরগি)
+                                            </h4>
+                                            <span>Price: 230tk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/sajek/barbeque.webp" class="card-img-top img-food" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-text color-theme fw-bold bn-font">পাহাড়ি মুরগির বারবিকিউ</h4>
+                                            <span>Price: 230tk</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/sajek/pahari-fruits.jpg" class="card-img-top img-food" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-text color-theme fw-bold bn-font">পাহাড়ি ফল</h4>
+                                            <span>Price: 230tk</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- What to do -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme mb-4 bn-font bn-font">যা যা করে বেড়ানোর আছে</h2>
+                        <div class="d-flex tourspot-scroll pb-4">
+                            <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/sajek/hiking-ghoraghuri.jpg" class="card-img-top img-food"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text color-theme fw-bold bn-font">হাইকিং</h5>
+                                            <span>Price: Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 mx-2">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <img src="images/sajek/hiking.jpg" class="card-img-top img-food" alt="...">
+                                    <div class="card-body">
+                                        <h4 class="card-text color-theme fw-bold bn-font">পাহাড় ঘুরে দেখা</h5>
+                                            <span>Price: Free</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Culture and History -->
+                    <div class="row p-4 rounded-4 shadow mb-4">
+                        <h2 class="fw-bold color-theme bn-font">এ জায়গাটির ইতিহাস আর ঐতিহ্য</h2>
+                        <p class="bn-font font-sm mt-3">সাজেক বাংলাদেশের অন্যতম একটি ট্যুরস্পট। পাহাড়প্রেমী মানুষদের সময়
+                            কাটানোর খুবই চমৎকার একটি জায়গা। যারা পাহাড় ভালোবাসে কিন্তু অনেকটা পথ ট্রেক করে পাহাড়ে ওঠার
+                            শারীরিক সামর্থ্য নেই, তারা সহজেই সাজেকে এসে পাহাড় দেখার সে স্বাদ গ্রহন করে যেতে পারে। <br>
+                            <br>
+                            সাজেকে বাংলাদেশের বেশ কয়েকটি উল্যেখযোগ্য নৃগোষ্ঠী বসবাস করে। চাকমা, মারমা, ত্রিপুরা,
+                            কৈবর্ত্য, লুসাই এবং অনেকাংশেই আসামি জনগোষ্ঠীর দেখা মেলে এখানে। সাজেক সমুদ্রপৃষ্ঠ থেকে প্রায়
+                            দুহাজার ফিট উচ্চতায়। সাজেকের নামকরন হয়েছে সাজেক নদী থেকে। সাজেক কর্নফুলি নদীর একটি শাখা।
+                            বাংলাদেশ আর ভারতের সীমানা গড়ে দিয়েছে এই সাজেক নদী। <br> <br>
+                            পাহাড়িদের বর্ষবরন উৎসব বৈসাবি, জন্মাষ্টমীসহ নানা উৎসব দেখতে সাজেকে আসা যেতে পারে।
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="d-flex flex-lg-column flex-column flex-md-row p-3 rounded-4 shadow">
+                        <div class="m-2">
+                            <p>Our blogger wrote blogs for this place. Read tourtoise blog right here.</p>
+                            <a href="" class="btn btn-success bg-theme w-100">Read Blogs</a>
+
+                        </div>
+                        <div class="m-2">
+                            <p>Book Hotel and Other services in here. Also Find place to stay</p>
+                            <a href="" class="btn btn-info bg-indigo w-100">Book Hotels</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-theme d-flex align-items-center">
+        <div class="container p-4 text-white">
+            <div class="row">
+                <div class="col-4 mb-5">
+                    <img class="footer-image" src="images/footer-logo.png" alt="">
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="row row-cols-lg-2 row-cols-md-2 row-cols-1">
+                        <div class="col mb-4">
+
+                            <p>
+                                Office-61, Pragati Sharani,<br>
+                                Gulshan,<br>
+                                Dhaka, Bangladesh</p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                +8801521305382
+                            </p>
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                </svg>
+                                &nbsp;shahtazrahman17@gmail.com
+                            </p>
+                            <p>Follow Us</p>
+                            <!-- Social Media Link -->
+                            <div class="d-flex my-3">
+                                <div class="me-3">
+                                    <a href="https://facebook.com" class="text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="mx-3">
+                                    <a href="https://twitter.com" class="text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="mx-3">
+                                    <a href="https://linkedin.com" class="text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <p class="text-center mb-0 fs-6">&copy;tourtoise 2022</p> -->
+        </div>
+    </footer>
+
+    <script src="styles/bootstrap.min.js"></script>
+</body>
+
+</html>
